@@ -1,0 +1,129 @@
+.Reasons
+{
+    display: flex;
+    margin-left: 2rem;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.left
+{
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.left-l > img
+{
+    height: 45rem;
+}
+
+.left-r-b 
+{
+    margin-top: 2rem;
+    
+    display: flex;
+    gap: 1.7rem;
+
+}
+
+.image3 img,
+.image4 img {
+height: 20.5rem; /* Adjust the height as needed */
+width: 16.5rem; /* Maintain aspect ratio */
+}
+
+
+.left-r-a
+{
+    gap: 3rem;
+}
+.right-r
+{
+    display: flex;
+    text-transform: uppercase;
+    gap: 2rem;
+    margin-left: 2rem;
+    flex: 1 1;
+    flex-direction: column;
+}
+.right-r>span
+{
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.right-r>div{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.details-r
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.details-r>div
+{
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.details-r>div>img
+{
+    width: 2rem;
+    height: 2rem;
+}
+
+.partners
+{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.partners>img{
+    width: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+      flex-direction: column;
+    }
+
+    .left-l,
+    .left-r {
+      width: auto;
+    }
+.left-l>img
+{
+    border-radius: 10px;
+}
+    .left-r-a > img
+    {
+        width: 16rem;
+        border-radius: 10px;
+    }
+    .left-r-a,
+    .left-r-b {
+      width: 100%;
+    }
+
+    .left-r-b {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .image3,
+    .image4 {
+      width: 45%;
+  }
+  .left-r-b>span>img
+  {
+    border-radius: 10px;
+  }
+}
